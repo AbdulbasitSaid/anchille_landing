@@ -17,20 +17,22 @@ body header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #3c8435;
   color: #f4fff4;
-  width: 100%;
+  max-width: 100%;
   padding: 1em;
-}
-
-body header .links {
-  float: right;
 }
 
 body header ul li {
   display: inline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 1em;
 }
 /*# sourceMappingURL=style.css.map */
