@@ -6,7 +6,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #e0ffd9;
+  background-color: #fafafa;
 }
 
 body header {
@@ -23,7 +23,7 @@ body header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #3c8435;
-  color: #f4fff4;
+  color: #f2fff2;
   max-width: 100%;
   padding: 1em;
 }
@@ -34,5 +34,29 @@ body header ul li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-right: 1em;
+}
+
+body .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin: .5%;
+}
+
+body .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .curved-image {
+  border-radius: 20;
+  max-width: 300px;
+  margin: 10px;
 }
 /*# sourceMappingURL=style.css.map */

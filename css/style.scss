@@ -25,4 +25,21 @@ body {
             }
         }
     }
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;;
+        margin: .5%;    
+    }
+    .menu{
+        display: flex;
+        
+    }
+    .curved-image{
+        border-radius: 20;
+        max-width: 300px;
+        margin: 10px;
+    }
 }
+
+
