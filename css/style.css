@@ -10,29 +10,45 @@ body {
 }
 
 body header {
-  background-color: #67BD4B;
-  color: #fafafa;
-  padding: 0 10rem 0 10rem;
-}
-
-body header .navbar {
-  display: block;
-}
-
-body header .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #67BD4B;
+  color: #fafafa;
+  padding: 1rem 10rem 1rem 10rem;
+}
+
+body header .nav-logo {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+body header .nav-item a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+body header .nav {
+  max-width: 300px;
+  min-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 body main {
@@ -55,8 +71,12 @@ body .gallery {
 }
 
 body .menu {
-  display: inline;
-  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body .curved-image {
@@ -74,7 +94,7 @@ body .curved-image {
     justify-items: center;
   }
   .curved-image {
-    width: 20rem;
+    width: 15rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
