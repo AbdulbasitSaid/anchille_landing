@@ -6,39 +6,49 @@ body {
     margin:0;
     background-color:$defaultBackgroundColor;
     header{
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        justify-content: space-around;
-        background-color: $darkPrimaryColor;
-        color:$lightTextColor;
-        max-width: 100%;
-        // margin:0 auto;
-        padding: 1em;
-        // .links{
-        //     // float: right;
-        // }
-        ul{
-            li{display: inline;
-                justify-content: space-between;
-                padding-right: 1em;
-            }
-        }
+      background-color: $primaryColor;
+      color: $defaultBackgroundColor;
+      padding: 0 10rem 0 10rem;
+      .navbar{
+          display: block;
+      }
+      .nav{
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: flex-start;
+      }
+    }
+    main{
+        padding: 5rem;
     }
     .gallery{
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;;
+        justify-content: center;
+        align-items: self-start;
         margin: .5%;    
     }
     .menu{
-        display: flex;
-        
+        display: inline;
+                margin:2rem;
+
+
     }
     .curved-image{
-        border-radius: 20;
-        max-width: 300px;
+        max-width: 25rem;
         margin: 10px;
+        border-radius: 2%;
+    }
+}
+
+@media all and (max-width:500px){
+    .gallery{
+        flex-direction: column;
+        justify-items: center;
+    }
+    .curved-image{
+        width: 20rem;
     }
 }
 
