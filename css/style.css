@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  color: #0b0b0c;
 }
 
 body {
@@ -23,8 +24,7 @@ body header {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  background-color: #67BD4B;
-  color: #fafafa;
+  background-color: #fafafa;
   padding: 1rem 10rem 1rem 10rem;
 }
 
@@ -35,7 +35,7 @@ body header .nav-logo {
 
 body header .nav-item a {
   text-decoration: none;
-  color: #fafafa;
+  color: #0b0b0c;
 }
 
 body header .nav {

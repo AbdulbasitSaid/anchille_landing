@@ -10,8 +10,7 @@ body {
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: flex-end;
-        background-color: $primaryColor;
-      color: $defaultBackgroundColor;
+        background-color: $defaultBackgroundColor;
       padding: 1rem 10rem 1rem 10rem;
       .nav-logo{
           align-self: flex-start;
@@ -19,7 +18,8 @@ body {
       .nav-item{
           a{
               text-decoration: none;
-              color: $defaultBackgroundColor;
+              color: $darkTextColor;
+              ;
           }
       }
      .nav{
