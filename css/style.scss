@@ -35,7 +35,7 @@ body {
     }
     .gallery{
         display: flex;
-        flex-wrap: wrap;
+        flex-flow: wrap row;
         justify-content: center;
         align-items: self-start;
         margin: .5%;    
@@ -49,6 +49,10 @@ body {
         max-width: 25rem;
         margin: 10px;
         border-radius: 2%;
+        transition: all 1.5s;
+    }
+    .curved-image:hover{
+        transform:scale(1.1,1.1);
     }
 }
 

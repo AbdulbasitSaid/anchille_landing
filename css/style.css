@@ -59,8 +59,10 @@ body .gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -83,6 +85,13 @@ body .curved-image {
   max-width: 25rem;
   margin: 10px;
   border-radius: 2%;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+body .curved-image:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 @media all and (max-width: 500px) {
