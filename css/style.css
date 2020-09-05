@@ -33,6 +33,10 @@ body header .nav-logo {
       align-self: flex-start;
 }
 
+body header .nav-logo img {
+  width: 6em;
+}
+
 body header .nav-item a {
   text-decoration: none;
   color: #0b0b0c;
@@ -53,6 +57,12 @@ body header .nav {
 
 body main {
   padding: 5rem;
+}
+
+body .gradient {
+  height: 300px;
+  background-image: -webkit-gradient(linear, left top, right top, from(green), to(yellow));
+  background-image: linear-gradient(to right, green, yellow);
 }
 
 body .gallery {
