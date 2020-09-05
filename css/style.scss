@@ -1,76 +1,38 @@
-@import  'config';
-@import 'util';
- 
-body {
-    padding: 0;
-    margin:0;
-    background-color:$defaultBackgroundColor;
-    header{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: flex-end;
-        background-color: $defaultBackgroundColor;
-      padding: 1rem 10rem 1rem 10rem;
-      .nav-logo{
-          align-self: flex-start;
-          img{
-              width: 6em;
-          }
-      }
-      .nav-item{
-          a{
-              text-decoration: none;
-              color: $darkTextColor;
-              ;
-          }
-      }
-     .nav{
-         max-width: 300px;
-         min-width: 200px;
-         display: flex;
-        justify-content: space-evenly;
-        align-content: flex-start;
-     }
-    }
-    main{
-        padding: 5rem;
-    }
-    .gradient{
-        height: 300px;
-        background-image: linear-gradient(to right,green,yellow);
-    }
-    .gallery{
-        display: flex;
-        flex-flow: wrap row;
-        justify-content: center;
-        align-items: self-start;
-        margin: .5%;    
-    }
-    .menu{
-        display: flex;
-        justify-content:center;
+@import "config";
+@import "util";
 
+.navbar {
+  background: $primaryColor;
+  padding: 0 4rem;
+  display: grid;
+  grid-template-columns: 1fr repeat(3, auto);
+justify-items: flex-start;
+  align-items: center;
+  gap: 10px;
+  .logo {
+    img {
+      width: 5em;
     }
-    .curved-image{
-        max-width: 25rem;
-        margin: 10px;
-        border-radius: 2%;
-        transition: all 1.5s;
-    }
-    .curved-image:hover{
-        transform:scale(1.1,1.1);
-    }
+  }
+  a {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 300;
+  }
 }
-
-@media all and (max-width:500px){
-    .gallery{
-        flex-direction: column;
-        justify-items: center;
+main {
+  padding: 4em;
+  .home {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column: 1/-1;
+    img {
+      width: 30em;
     }
-    .curved-image{
-        width: 15rem;
-    }
+  }
 }
-
-
+.footer {
+  background: blue;
+  height: 100vh;
+}
