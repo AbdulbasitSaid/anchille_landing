@@ -2,7 +2,7 @@
 @import "util";
 
 .navbar {
-  background: $primaryColor;
+//   background: $primaryColor;
   padding: 0 4rem;
   display: grid;
   grid-template-columns: 1fr repeat(3, auto);
@@ -20,19 +20,41 @@ justify-items: flex-start;
     font-weight: 300;
   }
 }
+.welcome{
+  align-self: center;
+}
+
+.welcome-text{
+    margin:  10px 0;
+}
+.primary-button{
+    background: $primaryColor;
+    padding:.5em;
+    display:inline;
+    font-weight: lighter;
+}
 main {
   padding: 4em;
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
   .home {
     height: 70vh;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column: 1/-1;
+    grid-template-columns: repeat(auto-fit,minmax( 400px,1fr)) ;
     img {
       width: 30em;
     }
   }
+  .about{
+    display: grid;
+    img{
+        width: 6em;
+    }
+}
 }
 .footer {
   background: blue;
-  height: 100vh;
+  display: block;
+  
 }

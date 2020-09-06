@@ -5,7 +5,6 @@
 }
 
 .navbar {
-  background: #67BD4B;
   padding: 0 4rem;
   display: -ms-grid;
   display: grid;
@@ -28,25 +27,58 @@
   font-weight: 300;
 }
 
+.welcome {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.welcome-text {
+  margin: 10px 0;
+}
+
+.primary-button {
+  background: #67BD4B;
+  padding: .5em;
+  display: inline;
+  font-weight: lighter;
+}
+
 main {
   padding: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  gap: 20px;
 }
 
 main .home {
   height: 70vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  grid-column: 1/-1;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 main .home img {
   width: 30em;
 }
 
+main .about {
+  display: -ms-grid;
+  display: grid;
+}
+
+main .about img {
+  width: 6em;
+}
+
 .footer {
   background: blue;
-  height: 100vh;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
