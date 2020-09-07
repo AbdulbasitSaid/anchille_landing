@@ -28,4 +28,24 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+#hero {
+  background-image: url("/img/hero.jpg");
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+}
+
+#hero::after {
+  top: 0;
+  left: 0;
+  content: '';
+  position: absolute;
+  background-color: #fbfbfb;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .7;
+}
 /*# sourceMappingURL=style.css.map */
