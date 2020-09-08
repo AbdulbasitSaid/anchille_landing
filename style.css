@@ -37,15 +37,33 @@ a {
   z-index: 1;
 }
 
+#hero h1 {
+  color: white;
+  font-size: 4rem;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+
+#hero a {
+  display: inline-block;
+  color: white;
+  border: solid 2px;
+  padding: 10px 30px;
+  margin-top: 30px;
+}
+
 #hero::after {
   top: 0;
   left: 0;
   content: '';
   position: absolute;
-  background-color: #fbfbfb;
+  background-color: #5FC44A;
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .7;
+  opacity: .5;
 }
 /*# sourceMappingURL=style.css.map */

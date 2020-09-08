@@ -19,9 +19,7 @@ a{
     align-items: center;
     justify-content: center;
 }
-
-                  
-
+                
 // hero section 
 #hero{
     background-image: url('/img/hero.jpg');
@@ -29,17 +27,31 @@ a{
     background-position: top center;
     position: relative;
     z-index: 1;
+    h1{
+        color:white;
+        font-size: 4rem;
+        display: block;
+        width: fit-content;
+        position: relative;
+    }
+    a{
+        display: inline-block;
+        color: white;
+        border: solid 2px ;
+        padding: 10px 30px;
+        margin-top: 30px;
+    }
 }
 #hero::after{
     top: 0;
     left: 0;
     content: '';
     position: absolute;
-    background-color: $primaryColor;
+    background-color: $color-secondary-0;
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: .7;
+    opacity: .5;
 
 }
 // end of hero section 
