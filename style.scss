@@ -38,14 +38,15 @@ a{
     .cta{
         display: inline-block;
         background-color: transparent;
-        color: $color-secondary-2-0;
+        color: white;
         border: solid 2px $color-secondary-2-0;
         padding: 10px 30px;
         margin-top: 30px;
         text-transform: uppercase;
         letter-spacing: .1rem;
         font-size: 2rem;
-        transition: .5s ease background-color;
+        transition: .5s ease;
+        transition-property: background-color, color;
     }
     .cta:hover{
         background-color: $color-secondary-2-0;

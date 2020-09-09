@@ -51,15 +51,17 @@ a {
 #hero .cta {
   display: inline-block;
   background-color: transparent;
-  color: #B5448E;
+  color: white;
   border: solid 2px #B5448E;
   padding: 10px 30px;
   margin-top: 30px;
   text-transform: uppercase;
   letter-spacing: .1rem;
   font-size: 2rem;
-  -webkit-transition: .5s ease background-color;
-  transition: .5s ease background-color;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
 }
 
 #hero .cta:hover {
