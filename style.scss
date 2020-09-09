@@ -26,6 +26,7 @@ a{
     background-size:cover;
     background-position: top center;
     position: relative;
+    padding:4em;
     z-index: 1;
     h1{
         color:white;
@@ -47,7 +48,7 @@ a{
     left: 0;
     content: '';
     position: absolute;
-    background-color: $color-secondary-0;
+    background-color: $color-primary-0;
     height: 100%;
     width: 100%;
     z-index: -1;
