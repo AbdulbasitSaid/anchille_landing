@@ -26,9 +26,13 @@ a{
     background-size:cover;
     background-position: top center;
     position: relative;
-    padding:4em;
     z-index: 1;
-   
+    .hero{
+        justify-content: flex-start;
+        margin: 0 auto;
+        padding:0 50px;
+        max-width: 1200px;
+    }
     h1{
         color:transparent;
         font-size: 4rem;
@@ -51,9 +55,7 @@ a{
     h1:nth-child(2) span{
         animation: reveal-box 2s ease-in-out 2s;
     }
-    h1:nth-child(3) span{
-        animation: reveal-box 2.5s ease-in-out 2.5s;
-    }
+   
     //animating text
     h1:nth-child(1){
         animation:reveal-text 2s ease-in 2s forwards;
@@ -61,8 +63,19 @@ a{
     h1:nth-child(2){
         animation:reveal-text 2.5s ease-in 2.5s forwards;
     }
-    h1:nth-child(3){
-        animation:reveal-text 3s ease-in 3s forwards;
+    h2{
+        color: transparent;
+        position: relative;
+        animation:reveal-last-text 3.5s ease-in 3.5s forwards;
+        span{   
+            position: absolute;   
+            width: 0;  
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: $color-secondary-1-0;
+            animation: reveal-box 3s ease-in-out 3s;
+        }
     }
     //end of text animation
     .cta{
@@ -112,6 +125,10 @@ a{
     100% {
         color: white;
     }
+}
+@keyframes reveal-last-text{
+    100% {color:black;
+font-weight: bold;    }
 }
 // end of keyframes
 

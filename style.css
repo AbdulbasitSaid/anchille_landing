@@ -34,8 +34,16 @@ a {
   background-size: cover;
   background-position: top center;
   position: relative;
-  padding: 4em;
   z-index: 1;
+}
+
+#hero .hero {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 auto;
+  padding: 0 50px;
+  max-width: 1200px;
 }
 
 #hero h1 {
@@ -67,11 +75,6 @@ a {
           animation: reveal-box 2s ease-in-out 2s;
 }
 
-#hero h1:nth-child(3) span {
-  -webkit-animation: reveal-box 2.5s ease-in-out 2.5s;
-          animation: reveal-box 2.5s ease-in-out 2.5s;
-}
-
 #hero h1:nth-child(1) {
   -webkit-animation: reveal-text 2s ease-in 2s forwards;
           animation: reveal-text 2s ease-in 2s forwards;
@@ -82,9 +85,22 @@ a {
           animation: reveal-text 2.5s ease-in 2.5s forwards;
 }
 
-#hero h1:nth-child(3) {
-  -webkit-animation: reveal-text 3s ease-in 3s forwards;
-          animation: reveal-text 3s ease-in 3s forwards;
+#hero h2 {
+  color: transparent;
+  position: relative;
+  -webkit-animation: reveal-last-text 3.5s ease-in 3.5s forwards;
+          animation: reveal-last-text 3.5s ease-in 3.5s forwards;
+}
+
+#hero h2 span {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #EB9559;
+  -webkit-animation: reveal-box 3s ease-in-out 3s;
+          animation: reveal-box 3s ease-in-out 3s;
 }
 
 #hero .cta {
@@ -151,6 +167,20 @@ a {
 @keyframes reveal-text {
   100% {
     color: white;
+  }
+}
+
+@-webkit-keyframes reveal-last-text {
+  100% {
+    color: black;
+    font-weight: bold;
+  }
+}
+
+@keyframes reveal-last-text {
+  100% {
+    color: black;
+    font-weight: bold;
   }
 }
 /*# sourceMappingURL=style.css.map */
