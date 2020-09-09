@@ -28,8 +28,9 @@ a{
     position: relative;
     padding:4em;
     z-index: 1;
+   
     h1{
-        color:white;
+        color:transparent;
         font-size: 4rem;
         display: block;
         width: fit-content;
@@ -37,12 +38,33 @@ a{
         span{
             position: absolute;
             background-color: $color-secondary-2-0;
-            width: 100%;
+            width: 0%;
             height: 100%;
             top: 0;
             right: 0;
         }
     }
+    
+    h1:nth-child(1) span{
+        animation: reveal-box 1.5s ease-in-out 1.5s;
+    }
+    h1:nth-child(2) span{
+        animation: reveal-box 2s ease-in-out 2s;
+    }
+    h1:nth-child(3) span{
+        animation: reveal-box 2.5s ease-in-out 2.5s;
+    }
+    //animating text
+    h1:nth-child(1){
+        animation:reveal-text 2s ease-in 2s forwards;
+    }
+    h1:nth-child(2){
+        animation:reveal-text 2.5s ease-in 2.5s forwards;
+    }
+    h1:nth-child(3){
+        animation:reveal-text 3s ease-in 3s forwards;
+    }
+    //end of text animation
     .cta{
         display: inline-block;
         background-color: transparent;
@@ -77,8 +99,19 @@ a{
 
 // keyframes
 @keyframes reveal-box{
-    
+    50% {
+        width: 100%;
+        right: 0;
+    }
+    100% { width: 0%;
+        right: 100%;
+    }
+
 }
-@keyframes reveal-text{}
+@keyframes reveal-text{
+    100% {
+        color: white;
+    }
+}
 // end of keyframes
 

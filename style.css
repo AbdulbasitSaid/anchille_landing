@@ -39,7 +39,7 @@ a {
 }
 
 #hero h1 {
-  color: white;
+  color: transparent;
   font-size: 4rem;
   display: block;
   width: -webkit-fit-content;
@@ -51,10 +51,40 @@ a {
 #hero h1 span {
   position: absolute;
   background-color: #B5448E;
-  width: 100%;
+  width: 0%;
   height: 100%;
   top: 0;
   right: 0;
+}
+
+#hero h1:nth-child(1) span {
+  -webkit-animation: reveal-box 1.5s ease-in-out 1.5s;
+          animation: reveal-box 1.5s ease-in-out 1.5s;
+}
+
+#hero h1:nth-child(2) span {
+  -webkit-animation: reveal-box 2s ease-in-out 2s;
+          animation: reveal-box 2s ease-in-out 2s;
+}
+
+#hero h1:nth-child(3) span {
+  -webkit-animation: reveal-box 2.5s ease-in-out 2.5s;
+          animation: reveal-box 2.5s ease-in-out 2.5s;
+}
+
+#hero h1:nth-child(1) {
+  -webkit-animation: reveal-text 2s ease-in 2s forwards;
+          animation: reveal-text 2s ease-in 2s forwards;
+}
+
+#hero h1:nth-child(2) {
+  -webkit-animation: reveal-text 2.5s ease-in 2.5s forwards;
+          animation: reveal-text 2.5s ease-in 2.5s forwards;
+}
+
+#hero h1:nth-child(3) {
+  -webkit-animation: reveal-text 3s ease-in 3s forwards;
+          animation: reveal-text 3s ease-in 3s forwards;
 }
 
 #hero .cta {
@@ -90,7 +120,37 @@ a {
   opacity: .7;
 }
 
-@-webkit-keyframes reveal-box {}
+@-webkit-keyframes reveal-box {
+  50% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 0%;
+    right: 100%;
+  }
+}
 
-@keyframes reveal-box {}@-webkit-keyframes reveal-text {}@keyframes reveal-text {}
+@keyframes reveal-box {
+  50% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 0%;
+    right: 100%;
+  }
+}
+
+@-webkit-keyframes reveal-text {
+  100% {
+    color: white;
+  }
+}
+
+@keyframes reveal-text {
+  100% {
+    color: white;
+  }
+}
 /*# sourceMappingURL=style.css.map */
