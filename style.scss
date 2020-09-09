@@ -35,12 +35,21 @@ a{
         width: fit-content;
         position: relative;
     }
-    a{
+    .cta{
         display: inline-block;
-        color: white;
-        border: solid 2px ;
+        background-color: transparent;
+        color: $color-secondary-2-0;
+        border: solid 2px $color-secondary-2-0;
         padding: 10px 30px;
         margin-top: 30px;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        font-size: 2rem;
+        transition: .5s ease background-color;
+    }
+    .cta:hover{
+        background-color: $color-secondary-2-0;
+        color: white;
     }
 }
 #hero::after{
@@ -48,11 +57,11 @@ a{
     left: 0;
     content: '';
     position: absolute;
-    background-color: $color-primary-0;
+    background-color: $color-primary-4;
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: .5;
+    opacity: .7;
 
 }
 // end of hero section 

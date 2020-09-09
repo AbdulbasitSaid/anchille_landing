@@ -48,12 +48,23 @@ a {
   position: relative;
 }
 
-#hero a {
+#hero .cta {
   display: inline-block;
-  color: white;
-  border: solid 2px;
+  background-color: transparent;
+  color: #B5448E;
+  border: solid 2px #B5448E;
   padding: 10px 30px;
   margin-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  font-size: 2rem;
+  -webkit-transition: .5s ease background-color;
+  transition: .5s ease background-color;
+}
+
+#hero .cta:hover {
+  background-color: #B5448E;
+  color: white;
 }
 
 #hero::after {
@@ -61,10 +72,10 @@ a {
   left: 0;
   content: '';
   position: absolute;
-  background-color: #5FC44A;
+  background-color: #298D14;
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .5;
+  opacity: .7;
 }
 /*# sourceMappingURL=style.css.map */
