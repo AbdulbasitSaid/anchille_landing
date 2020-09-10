@@ -106,8 +106,8 @@ a {
 #hero .cta {
   display: inline-block;
   background-color: transparent;
-  color: white;
-  border: solid 2px #B5448E;
+  color: transparent;
+  border: solid 2px transparent;
   padding: 10px 30px;
   margin-top: 30px;
   text-transform: uppercase;
@@ -117,10 +117,12 @@ a {
   transition: .5s ease;
   -webkit-transition-property: background-color, color;
   transition-property: background-color, color;
+  -webkit-animation: show-button 4s ease-in 4s forwards;
+          animation: show-button 4s ease-in 4s forwards;
 }
 
 #hero .cta:hover {
-  background-color: #B5448E;
+  background-color: #EB9559;
   color: white;
 }
 
@@ -181,6 +183,20 @@ a {
   100% {
     color: black;
     font-weight: bold;
+  }
+}
+
+@-webkit-keyframes show-button {
+  100% {
+    border-color: #EB9559;
+    color: white;
+  }
+}
+
+@keyframes show-button {
+  100% {
+    border-color: #EB9559;
+    color: white;
   }
 }
 /*# sourceMappingURL=style.css.map */

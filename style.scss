@@ -81,8 +81,8 @@ a{
     .cta{
         display: inline-block;
         background-color: transparent;
-        color: white;
-        border: solid 2px $color-secondary-2-0;
+        color: transparent;
+        border: solid 2px transparent;
         padding: 10px 30px;
         margin-top: 30px;
         text-transform: uppercase;
@@ -90,9 +90,10 @@ a{
         font-size: 2rem;
         transition: .5s ease;
         transition-property: background-color, color;
+        animation: show-button 4s ease-in 4s forwards;
     }
     .cta:hover{
-        background-color: $color-secondary-2-0;
+        background-color: $color-secondary-1-0;
         color: white;
     }
 }
@@ -129,6 +130,12 @@ a{
 @keyframes reveal-last-text{
     100% {color:black;
 font-weight: bold;    }
+}
+@keyframes show-button{
+    100% {
+        border-color: $color-secondary-1-0;
+        color:white
+    }
 }
 // end of keyframes
 
