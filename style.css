@@ -47,6 +47,7 @@ a {
   letter-spacing: .2rem;
   text-align: center;
   padding: .2rem;
+  font-size: 2rem;
 }
 
 .section-title span {
@@ -173,7 +174,6 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  gap: 4em;
   padding: 4em;
 }
 
@@ -220,11 +220,6 @@ p {
   z-index: 1;
 }
 
-#services .services .service-bottom .service-card h2 {
-  text-transform: uppercase;
-  padding: .5em 0;
-}
-
 #services .services .service-bottom .service-card p {
   text-align: left;
 }
@@ -246,6 +241,45 @@ p {
   height: 80px;
   padding: 0;
   margin: 0;
+}
+
+#projects .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 4rem;
+}
+
+#projects .projects .project-title {
+  padding: 4rem;
+}
+
+#projects .projects .project-item {
+  margin: 2rem 0;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+#projects .projects .project-item p {
+  text-align: left;
+}
+
+#projects .projects .project-item .project-text {
+  padding: 1rem;
+  background-image: linear-gradient(60deg, gray, lightgray);
+}
+
+#projects .projects .project-item .project-image {
+  height: 30vh;
+  background-image: url("/img/hero.jpg");
 }
 
 @-webkit-keyframes reveal-box {
