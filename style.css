@@ -7,7 +7,7 @@
 
 html {
   font-size: 10px;
-  font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -44,9 +44,9 @@ a {
 .section-title {
   text-transform: uppercase;
   font-weight: 300;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   text-align: center;
-  padding: .2rem;
+  padding: 0.2rem;
   font-size: 2rem;
 }
 
@@ -57,7 +57,7 @@ a {
 p {
   text-align: center;
   font-size: small;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 #hero {
@@ -142,10 +142,10 @@ p {
   padding: 10px 30px;
   margin-top: 30px;
   text-transform: uppercase;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   font-size: 2rem;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
   -webkit-transition-property: background-color, color;
   transition-property: background-color, color;
   -webkit-animation: show-button 4s ease-in 4s forwards;
@@ -160,13 +160,13 @@ p {
 #hero::after {
   top: 0;
   left: 0;
-  content: '';
+  content: "";
   position: absolute;
   background-color: #298D14;
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 #services .services {
@@ -232,7 +232,7 @@ p {
   width: 100%;
   position: absolute;
   background-color: black;
-  opacity: .4;
+  opacity: 0.4;
   z-index: -1;
 }
 
@@ -262,7 +262,7 @@ p {
   color: #fafafa;
   font-size: 2rem;
   text-transform: uppercase;
-  margin: .3em 0;
+  margin: 0.3em 0;
 }
 
 #projects .projects h2 {
@@ -292,27 +292,29 @@ p {
 
 #projects .projects .project-item .project-image {
   height: 200px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   overflow: hidden;
   position: relative;
 }
 
 #projects .projects .project-item .project-image img {
-  -webkit-transition: .3s ease transform;
-  transition: .3s ease transform;
+  -webkit-transition: 0.3s ease transform;
+  transition: 0.3s ease transform;
 }
 
 #projects .projects .project-item .project-image::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   background-color: #0a0a0a;
-  opacity: .7;
+  opacity: 0.7;
 }
 
-#projects .projects :hover .project-image img {
+#projects .projects .project-item :hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
