@@ -436,6 +436,8 @@ p {
   border-radius: .6rem;
   width: 250px;
   height: auto;
+  -webkit-transition: .5s ease box-shadow;
+  transition: .5s ease box-shadow;
 }
 
 #contact .cards .card-item .icon {
@@ -446,6 +448,11 @@ p {
 
 #contact .cards .card-item p {
   max-width: 200px;
+}
+
+#contact .cards .card-item:hover {
+  -webkit-box-shadow: 0px 0px 4px 0 #0000002c;
+          box-shadow: 0px 0px 4px 0 #0000002c;
 }
 
 @-webkit-keyframes reveal-box {
