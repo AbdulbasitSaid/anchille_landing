@@ -61,6 +61,14 @@ p {
   letter-spacing: 0.1rem;
 }
 
+.ow {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
 .cta {
   display: inline-block;
   background-color: transparent;
@@ -384,6 +392,60 @@ p {
   height: 100%;
   border: solid #EB9559 0.4em;
   z-index: -1;
+}
+
+#contact .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  gap: 4rem;
+  margin-top: 6rem;
+}
+
+#contact .cards {
+  max-width: 1200px;
+  padding: 4rem;
+  width: 400px;
+}
+
+#contact .cards .card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4rem;
+  padding: 4rem;
+  background-color: #fafafa;
+  -webkit-box-shadow: 0px 0px 18px 0 #0000002c;
+          box-shadow: 0px 0px 18px 0 #0000002c;
+  border-radius: .6rem;
+  width: 250px;
+  height: auto;
+}
+
+#contact .cards .card-item .icon {
+  height: 50px;
+  width: 50px;
+  margin: 0 0 10px 0;
+}
+
+#contact .cards .card-item p {
+  max-width: 200px;
 }
 
 @-webkit-keyframes reveal-box {
