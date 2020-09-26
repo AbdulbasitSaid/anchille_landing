@@ -1,9 +1,8 @@
-# one-page-website-html-css-project-for-practice
-## Watch The Complete Tutorial : https://youtu.be/ZFQkb26UD1Y
+# one-page-website-html-css-project-for-anchille
 
-This project is for html &amp; css practice. We made this for youtube tutorial purpose.
-<b>coded by [Shaif Arfan](https://github.com/shaifarfan)</b>
+
+This project is for html &amp; css practice.
+<b>coded by [Abdulbasit said](https://github.com/abdulbasitsaid)</b>
 ### 👍 HAVE FUN 👍
-Thanks, Arfan
+Thanks, Abdulbasit@Codesahir
 
-![Watch Now](./img/Design.jpg)
